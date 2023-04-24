@@ -67,13 +67,13 @@ function AddTransaction(){
     return (
         <form onSubmit={handleSubmit}>
             <label htmlFor="Date">Date</label>
-            <input type="text" placeholder="Enter Date" id="Date" onChange={handleChange} value={date} />
+            <input type="text" placeholder="Enter Date" id="Date" onChange={handleChange} value={date} required/>
             <label htmlFor="Description">Description</label>
-            <input type="text" placeholder="Enter Description" id="Description" onChange={handleChange} value={description} />
+            <input type="text" placeholder="Enter Description" id="Description" onChange={handleChange} value={description} required/>
             <label htmlFor="Category">Category</label>
-            <input type="text" placeholder="Enter category" id="Category" onChange={handleChange} value={category} />
+            <input type="text" placeholder="Enter category" id="Category" onChange={handleChange} value={category} required/>
             <label htmlFor="Amount">Amount</label>
-            <input type="text" placeholder="Enter amount" id="Amount" onChange={handleChange} value={amount}/>
+            <input type="text" placeholder="Enter amount" id="Amount" onChange={handleChange} value={amount} required/>
             <button type="submit">Add transaction</button>
         </form>
     )

@@ -9,6 +9,18 @@ function DisplayTransactions() {
       .then(data => setTransactions(data));
   }, []);
 
+  function deleteTransaction(id){
+    fetch(`http://localhost:3000/transactions/${id}`, {
+    method: 'DELETE'
+    })
+    .then(resp => {
+    if(resp.ok){
+    setTransactions(transactions.filter(transaction => transaction.id !== id));
+    }
+    })
+    }
+
+
   return (
     <table>
       <thead>
@@ -27,6 +39,7 @@ function DisplayTransactions() {
               <td>{transaction.description}</td>
               <td>{transaction.category}</td>
               <td>{transaction.amount}</td>
+              <button onClick={() => deleteTransaction(transaction.id)}>Delete</button>
             </tr>
           );
         })}
