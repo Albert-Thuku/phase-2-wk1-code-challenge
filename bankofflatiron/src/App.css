@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+body {
+  background-color: #222;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#Header {
+  background-color: #333;
+  padding: 1em;
+  margin-bottom: 1em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#Header h1 {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+form {
+  border: 1px solid #333;
+  padding: 1em;
+  margin-bottom: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+form label {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #aaa;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form input[type="text"]{
+  background-color: #ffffff;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+}
+
+form button[type="submit"] {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  text-decoration-color: #fff;
+}
+
+
+form input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 2px 1px #555;
+}
+
+form button[type="submit"]:hover {
+  background-color: #444;
+  cursor: pointer;
+}
+
+#Transaction table {
+  border: 1px solid #ffffff;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+#Transaction th {
+  background-color: #444;
+  color: #fff;
+  text-align: left;
+  padding: 0.5em;
+  border: 1px solid #333;
+}
+
+#Transaction td {
+  border: 1px solid #ffffff;
+  padding: 0.5em;
+  margin: 50px;
+  
+}
+
+#Transaction tbody tr:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+
+#Transaction button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  margin: 0;
+  cursor: pointer;
+}
+
+#Transaction button:hover {
+  background-color: #444;
+}
+
+#SearchForm {
+  border: 1px solid #333;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+#SearchForm input[type="text"],
+#SearchForm button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  margin-right: 0.5em;
+}
+
+#SearchForm input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 2px 1px #555;
+}
+
+#SearchForm button[type="submit"]:hover {
+  background-color: #444;
+  cursor: pointer;
+}
+
+section {
+  margin-bottom: 2em;
 }

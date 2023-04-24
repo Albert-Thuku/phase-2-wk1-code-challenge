@@ -22,7 +22,7 @@ function DisplayTransactions() {
 
 
   return (
-    <table>
+    <table id='Transaction'>
       <thead>
         <tr>
           <th>Date</th>

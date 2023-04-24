@@ -65,7 +65,7 @@ function AddTransaction(){
     }
     
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} id="AddTransactionForm">
             <label htmlFor="Date">Date</label>
             <input type="text" placeholder="Enter Date" id="Date" onChange={handleChange} value={date} required/>
             <label htmlFor="Description">Description</label>

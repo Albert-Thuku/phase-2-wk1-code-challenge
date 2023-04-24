@@ -17,7 +17,7 @@ function SearchTransaction(){
     }
     
     return (
-        <form onSubmit={search}>
+        <form onSubmit={search} id="SearchForm">
             <input 
                 type="text" 
                 id="searchBar" 
